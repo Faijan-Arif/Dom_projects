@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+    color: #eee;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(5, 5, 5);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   ;
+}
+
+#card{
+    height: 450px;
+    width: 300px;
+    background-color: #eee1ee;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #00FF00;
+    position: relative;
+   
+
+}
+
+#stories{
+   height: 120px;
+   width: 100%;
+   padding: 15px;
+   border-bottom: solid 1px #555;
+   white-space: nowrap; /*saari story ek line me aa jayegi*/
+   overflow-x: auto; /* story scrolling/swip  at x axis */
+   overflow-y: hidden;
+}
+#stories::-webkit-scrollbar{
+    display: none; /*scroll baar would go hidden*/
+}
+
+.story{
+    border: 2px solid cyan;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 5px;
+    /* background: linear-gradient(#b624c1, #ffff71, #9457e4, #0ff0fc, #1562c1); */
+    /* padding:  solid 2px; */
+    /* border: 3px solid linear-gradient(#b624c1, #ffff71, #9457e4, #0ff0fc, #1562c1); */
+}
+
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#full-screen{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: none;
+}

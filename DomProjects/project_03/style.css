@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(5, 5, 5);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    height: 400px;
+    width: 300px;
+    background-color: beige;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* object-position: top; */
+}
+#container i{
+    color: #fff;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1); 
+    /* scale (put value here from 0 - any number) */
+    /* we cannot use transform scale() beacause of transform translate()
+    have been already use , you can use only one at a time otherwise both are 
+    overlapping to each other, so that you can inject transforn scale()  in 
+    transform translate => transform: translate() scale() like this  */
+    opacity: 0;
+    transition: 0.2ms;
+    transition: transform ease 0.4ms;   
+}
+
+
+@keyframes like-heart-animation {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    15% {
+      opacity: 0.9;
+      transform: scale(1.2);
+    }
+    30% {
+      transform: scale(0.95);
+    }
+    45%,
+    80% {
+      opacity: 0.9;
+      transform: scale(1);
+    }
+  }
+  

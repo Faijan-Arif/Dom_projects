@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+    color: #fff1ef;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(6, 7, 7);
+    
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cusror{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(16, 233, 37);
+    /* background-color: #fff1ef; */
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    position: absolute;
+    transition: all linear 0.1s;
+}
+h1{
+    font-size: 7vw;
+    font-weight: 900;
+  
+}
